@@ -1,0 +1,19 @@
+label,
+textarea,
+input[type=text],
+input[type=submit],
+select{
+    display:block;
+    width: 80%;
+    margin: 1em;
+    padding: 1em;
+}
+img{
+    width: 5vh;
+}
+.completed{
+    width: 10vw;
+    background-color: rgb(47, 255, 144);
+    font-size:large;
+    text-shadow:2cap;
+}
