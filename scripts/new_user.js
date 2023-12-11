@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", e => {
 
+    //const host = "http://35.165.18.146/"
     saveButton.addEventListener("click", e => {
 
         if (passwordInput.value != repeatPassword.value) {
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", e => {
         const elements = document.querySelectorAll("main [name]");
         const content = [...elements].map(e => `${encodeURIComponent(e.name)}=${encodeURIComponent(e.value)}`).join("&");
 
-        fetch("http://localhost:8083/api/users/", {
+        fetch(host + "/api/users/", {
             method: "POST", body: content,
             headers: {
                 "Content-type": "application/x-www-form-urlencoded" //"application/json"

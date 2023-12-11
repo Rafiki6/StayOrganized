@@ -17,3 +17,8 @@ img{
     font-size:large;
     text-shadow:2cap;
 }
+a{
+    text-decoration: none;
+    font-size: larger;
+    font-style: italic;
+}
